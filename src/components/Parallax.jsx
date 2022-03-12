@@ -17,8 +17,11 @@ const Parallax = () => {
           data-aos-offset="1"
         >
           <AiOutlineCompass className="icon" />
-          <a href="https://www.google.com/maps/place/52.9, -3.85">
-            52.9, -3.85
+          <a
+            target="BLANK"
+            href="https://www.google.com/maps/place/Mount+Tammany/@40.9691951,-75.1194443,15.48z/"
+          >
+            40.9690, -75.1132
           </a>
         </div>
 
@@ -30,7 +33,7 @@ const Parallax = () => {
           data-aos-duration="800"
           data-aos-offset="1"
         >
-          Snowdonia National Park, UK
+          Mount Tammany, NJ
         </div>
       </div>
     </div>

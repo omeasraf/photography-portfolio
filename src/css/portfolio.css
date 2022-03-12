@@ -1,5 +1,6 @@
 .portfolio-container {
   @apply h-full w-full absolute bg-black flex items-center justify-center;
+  animation: all 1s ease-in;
 }
 @media (max-width: 465px) {
   .portfolio-container {
