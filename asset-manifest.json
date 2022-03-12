@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/photography-portfolio/static/css/main.76e21211.css",
+    "main.js": "/photography-portfolio/static/js/main.feb50be8.js",
+    "static/media/bg-4.JPG": "/photography-portfolio/static/media/bg-4.4f02324827663b91966d.JPG",
+    "index.html": "/photography-portfolio/index.html",
+    "main.76e21211.css.map": "/photography-portfolio/static/css/main.76e21211.css.map",
+    "main.feb50be8.js.map": "/photography-portfolio/static/js/main.feb50be8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76e21211.css",
+    "static/js/main.feb50be8.js"
+  ]
+}
