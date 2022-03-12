@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+.parallax {
+  height: 100vh;
+  background: linear-gradient(
+      to top,
+      black 0%,
+      rgba(0, 0, 0, 0.738) 19%,
+      rgba(0, 0, 0, 0.541) 34%,
+      rgba(0, 0, 0, 0.382) 47%,
+      rgba(0, 0, 0, 0.278) 56.5%,
+      rgba(0, 0, 0, 0.194) 65%,
+      rgba(0, 0, 0, 0.126) 73%,
+      rgba(0, 0, 0, 0.075) 80.2%,
+      rgba(0, 0, 0, 0.042) 86.1%,
+      rgba(0, 0, 0, 0.021) 91%,
+      rgba(0, 0, 0, 0.008) 95.2%,
+      rgba(0, 0, 0, 0.002) 98.2%,
+      transparent 100%
+    ),
+    url("../images/bg.jpg");
+  background-fit: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bottom {
+  @apply absolute bottom-0 left-0 flex flex-row justify-between w-full px-10 mb-10;
+}
+
+.texts {
+  @apply flex flex-row gap-2;
+}
+
+.icon {
+  @apply text-[15px];
+  animation: spin 4s cubic-bezier(0, 0, 0, 0.92) infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* .mountain {
+  position: absolute;
+  height: 100px;
+  background: url("../images/mountain.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+} */
+
+.title {
+  @apply h-full flex justify-center items-center text-[100px];
+  font-family: "Permanent Marker", cursive;
+}
