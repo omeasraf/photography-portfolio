@@ -1,0 +1,17 @@
+.footer {
+  @apply h-[70vh] bg-black flex flex-col justify-between items-center p-[20vh];
+}
+
+.footer > a {
+  @apply text-[25px] sm:text-[42px];
+  letter-spacing: 3px;
+}
+
+.footer > a:hover {
+  text-decoration: underline;
+}
+
+.footer > h3 {
+  font-size: 25px;
+  font-family: "Permanent Marker", cursive;
+}

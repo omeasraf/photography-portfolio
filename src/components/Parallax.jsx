@@ -1,4 +1,4 @@
-import "../css/parallax.css";
+import "../assets/css/parallax.css";
 import { AiOutlineCompass } from "react-icons/ai";
 
 const Parallax = () => {

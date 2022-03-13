@@ -1,0 +1,68 @@
+{
+  "portrait": {
+    "name": "Portraits",
+    "images": [
+      "Portraits/portrait_1.jpeg",
+      "Portraits/portrait_2.jpeg",
+      "Portraits/portrait_3.jpeg",
+      "Portraits/portrait_4.jpeg",
+      "Portraits/portrait_5.jpeg",
+      "Portraits/portrait_6.JPG",
+      "Portraits/portrait_7.JPG",
+      "Portraits/portrait_8.JPG",
+      "Portraits/portrait_9.JPG",
+      "Portraits/portrait_10.JPG",
+      "Portraits/portrait_11.JPG",
+      "Portraits/portrait_12.JPG",
+      "Portraits/portrait_13.JPG",
+      "Portraits/portrait_14.JPG",
+      "Portraits/portrait_15.jpeg",
+      "Portraits/portrait_16.JPG",
+      "Portraits/portrait_17.jpeg",
+      "Portraits/portrait_18.JPG",
+      "Portraits/portrait_19.JPG"
+    ]
+  },
+  "couple": {
+    "name": "Couple Photoshoot",
+    "images": [
+      "Couple/couple_1.jpeg",
+      "Couple/couple_2.jpeg",
+      "Couple/couple_3.jpeg",
+      "Couple/couple_4.jpeg",
+      "Couple/couple_5.jpeg"
+    ]
+  },
+  "landscape": {
+    "name": "Couple Photoshoot",
+    "images": [
+      "Landscape/landscape_1.JPG",
+      "Landscape/landscape_2.JPG",
+      "Landscape/landscape_3.JPG",
+      "Landscape/landscape_4.JPG",
+      "Landscape/landscape_5.JPG",
+      "Landscape/landscape_6.JPG",
+      "Landscape/landscape_7.JPG",
+      "Landscape/landscape_8.JPG",
+      "Landscape/landscape_9.JPG",
+      "Landscape/landscape_10.JPG",
+      "Landscape/landscape_11.JPG",
+      "Landscape/landscape_13.JPG",
+      "Landscape/landscape_14.JPG",
+      "Landscape/landscape_15.JPG",
+      "Landscape/landscape_16.JPG",
+      "Landscape/landscape_17.JPG",
+      "Landscape/landscape_18.JPG",
+      "Landscape/landscape_19.JPG",
+      "Landscape/landscape_20.JPG",
+      "Landscape/landscape_21.JPG",
+      "Landscape/landscape_22.JPG",
+      "Landscape/landscape_23.JPG",
+      "Landscape/landscape_24.JPG",
+      "Landscape/landscape_25.jpg",
+      "Landscape/landscape_26.JPG",
+      "Landscape/landscape_27.jpg",
+      "Landscape/landscape_28.JPG"
+    ]
+  }
+}

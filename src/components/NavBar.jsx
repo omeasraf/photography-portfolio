@@ -1,19 +1,22 @@
-import "../css/navbar.css";
+import { Link } from "react-router-dom";
+import "../assets/css/navbar.css";
 
 const NavBar = () => {
   return (
     <div className="navbar">
-      <span>
+      <span className="w-[150px]">
         <MenuIcon />
       </span>
-      <h3 className="logo-name hidden sm:block">ABHI ASRAF</h3>
+      <Link to="/">
+        <h3 className="logo-name hidden sm:block w-[150px]">ABHI ASRAF</h3>
+      </Link>
       <MenuButton />
     </div>
   );
 };
 
 const MenuButton = () => {
-  return <button className="menuButton">Get in touch</button>;
+  return <button className="menuButton w-[150px]">Get in touch</button>;
 };
 const MenuIcon = () => {
   return (
