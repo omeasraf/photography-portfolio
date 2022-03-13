@@ -1,6 +1,7 @@
 import React from "react";
 import useIntersectionObserver from "../hooks/interaction-observer";
 
+// https://frontend-digest.com/progressively-loading-images-in-react-107cb075417a
 const ImageContainer = (props) => {
   const ref = React.useRef();
   const [isVisible, setIsVisible] = React.useState(false);

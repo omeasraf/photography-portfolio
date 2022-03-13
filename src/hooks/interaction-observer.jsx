@@ -1,4 +1,6 @@
 import React from "react";
+
+// https://frontend-digest.com/progressively-loading-images-in-react-107cb075417a
 const useIntersectionObserver = ({
   target,
   onIntersect,
