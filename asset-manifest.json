@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.61a217cf.css",
-    "main.js": "/static/js/main.bcccd504.js",
+    "main.css": "/static/css/main.cde621b8.css",
+    "main.js": "/static/js/main.d5ee44d8.js",
     "static/media/landscape_23.JPG": "/static/media/landscape_23.4b980a249e6c44854041.JPG",
     "static/media/landscape_26.JPG": "/static/media/landscape_26.6da37c99e5b931693e30.JPG",
     "static/media/landscape_28.JPG": "/static/media/landscape_28.98d03b895fa353d4257f.JPG",
     "static/media/landscape_24.JPG": "/static/media/landscape_24.64676ca4966e1a3d5429.JPG",
     "static/media/landscape_1.JPG": "/static/media/landscape_1.5bc9a026866eecaf33d3.JPG",
-    "static/media/landscape_2.JPG": "/static/media/landscape_2.82c74e0e2411d064c5e4.JPG",
+    "static/media/landscape_20.JPG": "/static/media/landscape_20.82c74e0e2411d064c5e4.JPG",
     "static/media/portrait_17.jpeg": "/static/media/portrait_17.344def54ff90ef6aab0a.jpeg",
     "static/media/portrait_11.JPG": "/static/media/portrait_11.0a43498d7726b767dcbd.JPG",
     "static/media/landscape_17.JPG": "/static/media/landscape_17.22e0227530c9d4b31bc3.JPG",
@@ -35,7 +35,7 @@
     "static/media/landscape_4.JPG": "/static/media/landscape_4.e1c1e7658928b9cb0af9.JPG",
     "static/media/landscape_7.JPG": "/static/media/landscape_7.d44e414c7c0643fa0879.JPG",
     "static/media/landscape_14.JPG": "/static/media/landscape_14.e3de3343e33ae5d886f5.JPG",
-    "static/media/landscape_20.JPG": "/static/media/landscape_20.9422ad47031594825843.JPG",
+    "static/media/landscape_2.JPG": "/static/media/landscape_2.9422ad47031594825843.JPG",
     "static/media/portrait_2.jpeg": "/static/media/portrait_2.f8a65a8644fac65c64e0.jpeg",
     "static/media/couple_3.jpeg": "/static/media/couple_3.571849d43ffacc746123.jpeg",
     "static/media/couple_2.jpeg": "/static/media/couple_2.14d85121afd3d99bdab2.jpeg",
@@ -59,11 +59,11 @@
     "static/media/landscape_18.JPG": "/static/media/landscape_18.8dd41201f4eac78adc68.JPG",
     "static/media/logo.png": "/static/media/logo.97f0e210cfd61b9d4683.png",
     "index.html": "/index.html",
-    "main.61a217cf.css.map": "/static/css/main.61a217cf.css.map",
-    "main.bcccd504.js.map": "/static/js/main.bcccd504.js.map"
+    "main.cde621b8.css.map": "/static/css/main.cde621b8.css.map",
+    "main.d5ee44d8.js.map": "/static/js/main.d5ee44d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.61a217cf.css",
-    "static/js/main.bcccd504.js"
+    "static/css/main.cde621b8.css",
+    "static/js/main.d5ee44d8.js"
   ]
 }
