@@ -1,16 +1,17 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import manifest from "../assets/images/manifest.json";
 import { useLocation } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MasonryView = () => {
   const location = useLocation();
   var path = location.pathname.split("/")[2];
   var images = [];
   if (
-    path != "all" &&
-    path != null &&
-    path.length != 0 &&
-    manifest[path] != null
+    path !== "all" &&
+    path !== null &&
+    path.length !== 0 &&
+    manifest[path] !== null
   )
     images = manifest[path].images;
   else {
@@ -32,15 +33,25 @@ const MasonryView = () => {
         <Masonry gutter="20px">
           {images.map((image) => {
             return (
-              <img
-                data-aos="fade-down"
-                data-aos-easing="ease-in"
-                data-aos-delay="50"
-                data-aos-duration="300"
-                key={image}
-                src={require(`../assets/images/${image}`)}
-                style={{ width: "100%", display: "block" }}
-              />
+              <div>
+                <LazyLoadImage
+                  data-aos="fade-down"
+                  data-aos-easing="ease-in"
+                  // data-aos-delay="50"
+                  // data-aos-duration="300"
+                  src={require(`../assets/images/${image}`)}
+                  width="100%"
+                />
+              </div>
+              // <img
+              //   data-aos="fade-down"
+              //   data-aos-easing="ease-in"
+              //   data-aos-delay="50"
+              //   data-aos-duration="300"
+              //   key={image}
+              //   src={require(`../assets/images/${image}`)}
+              //   style={{ width: "100%", display: "block" }}
+              // />
             );
           })}
         </Masonry>

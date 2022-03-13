@@ -10,7 +10,7 @@ const Footer = () => {
           data-aos-easing="ease-in"
           data-aos-duration="500"
         >
-          abhiasraf@gmail.com
+          abhiasraf01@gmail.com
         </h2>
       </a>
       <h3
