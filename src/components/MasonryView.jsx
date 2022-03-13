@@ -1,7 +1,7 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import manifest from "../assets/images/manifest.json";
 import { useLocation } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import LazyLoad from "react-lazyload";
 
 const MasonryView = () => {
   const location = useLocation();
@@ -24,7 +24,6 @@ const MasonryView = () => {
     }
   }
 
-  console.log(images);
   return (
     <div className="m-10">
       <ResponsiveMasonry
@@ -33,16 +32,28 @@ const MasonryView = () => {
         <Masonry gutter="20px">
           {images.map((image) => {
             return (
-              <div>
-                <LazyLoadImage
+              // <div>
+              //   <LazyLoadImage
+              //     data-aos="fade-down"
+              //     data-aos-easing="ease-in"
+              //     data-aos-delay="50"
+              //     // data-aos-duration="300"
+              //     src={require(`../assets/images/${image}`)}
+              //     width="100%"
+              //   />
+              // </div>
+              <LazyLoad>
+                <img
+                  loading="lazy"
                   data-aos="fade-down"
                   data-aos-easing="ease-in"
-                  data-aos-delay="50"
                   data-aos-duration="300"
+                  key={image}
                   src={require(`../assets/images/${image}`)}
-                  width="100%"
+                  alt=""
+                  style={{ width: "100%", display: "block" }}
                 />
-              </div>
+              </LazyLoad>
             );
           })}
         </Masonry>

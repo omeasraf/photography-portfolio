@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../assets/css/portfolio.css";
 import MasonryView from "../components/MasonryView";
 

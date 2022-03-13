@@ -3,7 +3,7 @@ import "../assets/css/footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <a href="#">
+      <a href="mailto:abhiasraf01@gmail.com">
         <h2
           className="item"
           data-aos="zoom-in"
