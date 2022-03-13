@@ -37,21 +37,12 @@ const MasonryView = () => {
                 <LazyLoadImage
                   data-aos="fade-down"
                   data-aos-easing="ease-in"
-                  // data-aos-delay="50"
-                  // data-aos-duration="300"
+                  data-aos-delay="50"
+                  data-aos-duration="300"
                   src={require(`../assets/images/${image}`)}
                   width="100%"
                 />
               </div>
-              // <img
-              //   data-aos="fade-down"
-              //   data-aos-easing="ease-in"
-              //   data-aos-delay="50"
-              //   data-aos-duration="300"
-              //   key={image}
-              //   src={require(`../assets/images/${image}`)}
-              //   style={{ width: "100%", display: "block" }}
-              // />
             );
           })}
         </Masonry>
