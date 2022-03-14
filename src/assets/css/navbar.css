@@ -16,7 +16,7 @@ h3 {
 /* Start Menu Button */
 
 .menuButton {
-  @apply bg-white text-black h-[50px] text-center px-5 rounded-md;
+  @apply bg-white text-black h-[50px] text-center px-5 rounded-md flex items-center justify-center;
 }
 
 /* End Menu Button */

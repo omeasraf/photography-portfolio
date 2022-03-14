@@ -16,7 +16,11 @@ const NavBar = () => {
 };
 
 const MenuButton = () => {
-  return <button className="menuButton w-[150px]">Get in touch</button>;
+  return (
+    <Link to="/contact" className="menuButton w-[150px]">
+      Get in touch
+    </Link>
+  );
 };
 const MenuIcon = () => {
   return (

@@ -1,0 +1,15 @@
+.pin-photo > img {
+  transition: opacity 0.4s ease-in-out;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1em;
+  border-radius: 10px;
+  cursor: zoom-in;
+  z-index: -2;
+}
+
+.pin-photo > img:hover {
+  filter: brightness(0.7);
+  z-index: -1;
+  display: initial;
+}

@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @variants responsive {
+    .masonry {
+      column-gap: 1.5em;
+      column-count: 1;
+      width: 90%;
+      margin: 50px auto;
+    }
+    .masonry-sm {
+      column-gap: 1.5em;
+      column-count: 2;
+      width: 90%;
+      margin: 50px auto;
+    }
+    .masonry-md {
+      column-gap: 1.5em;
+      column-count: 3;
+      width: 90%;
+      margin: 50px auto;
+    }
+    .masonry-lg {
+      column-gap: 1.5em;
+      column-count: 5;
+      width: 90%;
+      margin: 50px auto;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
@@ -15,4 +47,27 @@ body {
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.hidden-view {
+  @apply mt-[20vh] bg-black flex justify-center;
+}
+
+.hidden-view > .items {
+  @apply flex flex-col sm:flex-row gap-6;
+}
+
+.hidden-view > .items > .info {
+  @apply flex flex-col justify-between p-8;
+}
+
+.hidden-view > .items > .info > .download {
+  @apply text-center mt-6 bg-white rounded-md p-3 text-black;
+}
+.hidden-view > .items > .image > img {
+  @apply rounded-md shadow-md;
+}
+
+.hidden-view > .items > .image {
+  width: 40vh;
 }

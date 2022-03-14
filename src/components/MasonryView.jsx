@@ -1,7 +1,8 @@
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+// import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import manifest from "../assets/images/manifest.json";
 import { useLocation } from "react-router-dom";
-import ImageContainer from "./ImageContainer";
+// import ImageContainer from "./ImageContainer";
+import "../assets/css/imageContainer.css";
 
 const MasonryView = () => {
   const location = useLocation();
@@ -26,7 +27,7 @@ const MasonryView = () => {
 
   return (
     <div className="m-10">
-      <ResponsiveMasonry
+      {/* <ResponsiveMasonry
         columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1600: 4, 1800: 5 }}
       >
         <Masonry gutter="20px">
@@ -40,7 +41,21 @@ const MasonryView = () => {
             );
           })}
         </Masonry>
-      </ResponsiveMasonry>
+      </ResponsiveMasonry> */}
+
+      <div className="masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
+        {images.map((image) => {
+          return (
+            <div className="pin-photo">
+              <img
+                src={require(`../assets/images/${image}`)}
+                key={image}
+                alt=""
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
