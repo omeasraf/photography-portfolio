@@ -28,14 +28,14 @@ const HiddenView = () => {
           <div className="flex flex-row gap-5">
             <a
               className="download"
-              href={require("../assets/zips/Proposal.zip")}
+              href="https://abhiasraf.com/static/zips/Proposal.zip"
               download
             >
               Download Edited Files
             </a>
             <a
               className="download"
-              href={require("../assets/zips/Unedited.zip")}
+              href="https://abhiasraf.com/static/zips/Unedited.zip"
               download
             >
               Download Unedited Files
