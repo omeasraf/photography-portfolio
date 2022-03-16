@@ -61,7 +61,7 @@ body {
   @apply flex flex-col justify-between p-8;
 }
 
-.hidden-view > .items > .info > .download {
+a.download {
   @apply text-center mt-6 bg-white rounded-md p-3 text-black;
 }
 .hidden-view > .items > .image > img {
