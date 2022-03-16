@@ -4,6 +4,8 @@
   "homepage": "https://omeasraf.github.io/",
   "private": true,
   "dependencies": {
+    "@sanity/client": "^3.2.0",
+    "@sanity/image-url": "^1.0.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -14,6 +16,7 @@
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.33.1",
     "react-lazy-load-image-component": "^1.5.1",
+    "react-loading": "^2.0.3",
     "react-masonry-component": "^6.3.0",
     "react-responsive-masonry": "^2.1.4",
     "react-router-dom": "^6.2.2",
