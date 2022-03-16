@@ -35,7 +35,7 @@ const Portfolio = () => {
           data-aos-delay="200"
           data-aos-duration="600"
         >
-          <Link to="/portfolio/couple">
+          <Link to="/portfolio/couple-photoshoot">
             <div className="imageContainer">
               <div className="bottom-fade"></div>
               <div className="bg-fade"></div>
