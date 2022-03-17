@@ -25,20 +25,30 @@ const HiddenView = () => {
       <div className="mt-[5vh]">
         <div className="flex flex-col justify-center items-center">
           <h3>Download Zip Files</h3>
-          <div className="flex flex-row gap-5">
-            <a
-              className="download"
-              href="https://abhiasraf.com/static/zips/Proposal.zip"
-              download
-            >
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-10">
+            <a className="download" href="/static/zips/Proposal.zip" download>
               Download Edited Files
             </a>
             <a
               className="download"
-              href="https://abhiasraf.com/static/zips/Unedited.zip"
+              href="/static/zips/unedited/part-1.zip"
               download
             >
-              Download Unedited Files
+              Download Unedited (part 1)
+            </a>
+            <a
+              className="download"
+              href="/static/zips/unedited/part-2.zip"
+              download
+            >
+              Download Unedited (part 2)
+            </a>
+            <a
+              className="download"
+              href="/static/zips/unedited/part-3.zip"
+              download
+            >
+              Download Unedited (part 3)
             </a>
           </div>
         </div>
