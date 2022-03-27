@@ -3,7 +3,7 @@
 }
 
 .footer > a {
-  @apply text-[25px] sm:text-[42px];
+  @apply text-[20px] sm:text-[32px];
   letter-spacing: 3px;
 }
 

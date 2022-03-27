@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../assets/css/navbar.css";
+import { elastic as Menu } from "react-burger-menu";
 
 const NavBar = () => {
   return (
@@ -24,10 +25,71 @@ const MenuButton = () => {
 };
 const MenuIcon = () => {
   return (
-    <div className="menuIcon">
-      <div className="hamburger-bar"></div>
-    </div>
+    <Menu styles={styles}>
+      <a href="/">Home</a>
+      <a href="/contact">Contact</a>
+      <a href="/portfolio/all">Portfolio</a>
+      <a href="/education">Education</a>
+    </Menu>
   );
 };
 
 export default NavBar;
+
+var styles = {
+  bmBurgerButton: {
+    position: "fixed",
+    width: "36px",
+    height: "30px",
+    left: "36px",
+    top: "36px",
+  },
+  bmBurgerBars: {
+    background: "rgb(255 255 255)",
+  },
+  bmBurgerBarsHover: {
+    background: "#a90000",
+  },
+  bmCrossButton: {
+    height: "24px",
+    width: "24px",
+  },
+  bmCross: {
+    background: "#bdc3c7",
+  },
+  bmMenuWrap: {
+    position: "fixed",
+    right: "inherit",
+    zIndex: "1100",
+    width: "300px",
+    height: "100%",
+    transition: "all 0.5s ease 0s",
+    top: "0px",
+    left: "0px",
+  },
+  bmMenu: {
+    background: "rgb(31, 46, 42)",
+    padding: "2.5em 1.5em 0",
+    fontSize: "1.15em",
+    height: "100%",
+    boxSizing: "border-box",
+    overflow: "auto",
+  },
+  bmMorphShape: {
+    fill: "rgb(31, 46, 42)",
+    left: "unset",
+  },
+  bmItemList: {
+    color: "#b8b7ad",
+    padding: "0.8em",
+    display: "flex",
+    flexDirection: "column",
+  },
+  bmItem: {
+    display: "inline-block",
+  },
+  bmOverlay: {
+    background: "rgba(0, 0, 0, 0.61)",
+    top: "0px",
+  },
+};
