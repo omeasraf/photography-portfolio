@@ -5,6 +5,7 @@
   position: fixed;
   top: 0px;
   width: 100%;
+  flex-basis: 100%;
   @apply flex flex-row justify-between items-center p-[40px];
 }
 h3 {

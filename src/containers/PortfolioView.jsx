@@ -18,7 +18,6 @@ const PortfolioView = () => {
           }`
       )
       .then((data) => {
-        console.log("Called sanity");
         setAllTabs(data);
         var tempHolder = {
           all: [],

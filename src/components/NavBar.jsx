@@ -42,7 +42,7 @@ var styles = {
     width: "36px",
     height: "30px",
     left: "36px",
-    top: "36px",
+    top: "50px",
   },
   bmBurgerBars: {
     background: "rgb(255 255 255)",
