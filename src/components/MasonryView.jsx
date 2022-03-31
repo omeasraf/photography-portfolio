@@ -1,11 +1,11 @@
 import { useLocation } from "react-router-dom";
 import "../assets/css/imageContainer.css";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { urlFor } from "../client/client";
 import ReactLoading from "react-loading";
 import LightGallery from "lightgallery/react";
 import lgZoom from "lightgallery/plugins/zoom";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { InView } from "react-intersection-observer";
 
 const MasonryView = ({ allImages }) => {
   const [images, setImages] = useState([]);
@@ -31,39 +31,42 @@ const MasonryView = ({ allImages }) => {
 
   return (
     <span>
-      <TransitionGroup className="image-container">
-        <CSSTransition key={path} timeout={300} classNames="slide">
-          {images === undefined || images.length === 0 ? (
-            <div className="flex flex-row justify-center">
-              <ReactLoading
-                type="cylon"
-                color="#FFF"
-                height={667}
-                width={375}
-              />
-            </div>
-          ) : (
-            <div className="masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
-              <LightGallery plugins={[lgZoom]} mode="lg-fade">
-                {images.map((image) => {
-                  var imageUrL = urlFor(image);
-                  return (
-                    <a
-                      data-lg-size="1406-1390"
-                      className="pin-photo"
-                      data-src={imageUrL}
-                      key={image._key}
-                      href={imageUrL}
-                    >
-                      <img className="img-responsive" src={imageUrL} alt="" />
-                    </a>
-                  );
-                })}
-              </LightGallery>
-            </div>
-          )}
-        </CSSTransition>
-      </TransitionGroup>
+      {images === undefined || images.length === 0 ? (
+        <div className="flex flex-row justify-center">
+          <ReactLoading type="cylon" color="#FFF" height={667} width={375} />
+        </div>
+      ) : (
+        <div className="masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
+          <LightGallery plugins={[lgZoom]} mode="lg-fade">
+            {images.map((image) => {
+              var imageUrL = urlFor(image);
+              return (
+                <a
+                  data-lg-size="1406-1390"
+                  className="pin-photo"
+                  data-src={imageUrL}
+                  key={image._key}
+                  href={imageUrL}
+                >
+                  <InView
+                    as="div"
+                    triggerOnce={true}
+                    onChange={(inView, entry) => {
+                      console.log(entry.target.children);
+                      if (inView) {
+                        entry.target.children[0].classList.add("appear");
+                      }
+                      console.log("Inview:", inView);
+                    }}
+                  >
+                    <img className="img-responsive" src={imageUrL} alt="" />
+                  </InView>
+                </a>
+              );
+            })}
+          </LightGallery>
+        </div>
+      )}
     </span>
   );
 };
