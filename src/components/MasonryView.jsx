@@ -59,7 +59,11 @@ const MasonryView = ({ allImages }) => {
                       console.log("Inview:", inView);
                     }}
                   >
-                    <img className="img-responsive" src={imageUrL} alt="" />
+                    <img
+                      className="img-responsive"
+                      src={imageUrL.width(300).url()}
+                      alt=""
+                    />
                   </InView>
                 </a>
               );

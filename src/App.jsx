@@ -23,6 +23,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/portfolio/*" element={<PortfolioView />} />
         <Route path="/contact" element={<ContactView />} />
+        <Route path="/education" element={<ContactView />} />
         <Route path="/march-13-2022" element={<HiddenView />} />
       </Routes>
     </>
