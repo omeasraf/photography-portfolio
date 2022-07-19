@@ -30,7 +30,7 @@ const MasonryView = ({ allImages }) => {
   }, [location, allImages, path]);
 
   return (
-    <span>
+    <span className="flex justify-center items-center">
       {images === undefined || images.length === 0 ? (
         <div className="flex flex-row justify-center">
           <ReactLoading type="cylon" color="#FFF" height={667} width={375} />

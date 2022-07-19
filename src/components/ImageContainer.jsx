@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 const ImageContainer = ({ imageUrL }) => {
@@ -6,7 +6,7 @@ const ImageContainer = ({ imageUrL }) => {
 
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      // controls.start("visible");
     }
   }, [inView]);
 

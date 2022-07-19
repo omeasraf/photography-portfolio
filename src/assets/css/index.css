@@ -17,12 +17,14 @@
       margin: 50px auto;
     }
     .masonry-md {
+      display: table-cell;
       column-gap: 1.5em;
       column-count: 3;
       width: 90%;
       margin: 50px auto;
     }
     .masonry-lg {
+      display: table-cell;
       column-gap: 1.5em;
       column-count: 5;
       width: 90%;
