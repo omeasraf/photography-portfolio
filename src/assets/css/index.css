@@ -17,14 +17,12 @@
       margin: 50px auto;
     }
     .masonry-md {
-      display: table-cell;
       column-gap: 1.5em;
       column-count: 3;
       width: 90%;
       margin: 50px auto;
     }
     .masonry-lg {
-      display: table-cell;
       column-gap: 1.5em;
       column-count: 5;
       width: 90%;
@@ -34,6 +32,22 @@
       break-inside: avoid;
     }
   }
+}
+
+.pin-photo {
+  transition: opacity 0.4s ease-in-out;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1em;
+  border-radius: 10px;
+  cursor: zoom-in;
+  z-index: -2;
+}
+
+.pin-photo > img:hover {
+  filter: brightness(0.7);
+  z-index: -1;
+  display: initial;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");

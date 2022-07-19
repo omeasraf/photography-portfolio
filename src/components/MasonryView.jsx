@@ -10,7 +10,7 @@ import { InView } from "react-intersection-observer";
 const MasonryView = ({ allImages }) => {
   const [images, setImages] = useState([]);
   const location = useLocation();
-  var path = location.pathname.split("/")[2];
+  let path = location.pathname.split("/")[2];
 
   useEffect(() => {
     if (allImages !== null && allImages !== undefined && allImages !== {}) {
@@ -39,7 +39,7 @@ const MasonryView = ({ allImages }) => {
         <div className="masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
           <LightGallery plugins={[lgZoom]} mode="lg-fade">
             {images.map((image) => {
-              var imageUrL = urlFor(image);
+              let imageUrL = urlFor(image);
               return (
                 <a
                   data-lg-size="1406-1390"
